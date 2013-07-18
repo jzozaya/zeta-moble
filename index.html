@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Coda|Capriola' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/plax.js"></script>
+<script type="text/javascript">
+  function loadingDivHide()
+  {
+    $('#loading_div').fadeOut('fast');
+    $('#wrapper').delay('330').slideDown('slow');
+    //alert('ok');
+    //  document.getElementById("loading_div").style.display = "none";
+     // document.getElementById("wrapper").style.display = "block";
+  }
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/bgpos.js"></script>
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/jquery.color.js"></script>
+<script src="js/AjaxUpload.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/raphael.sketchpad.js"></script>
+
+<script type="text/javascript" src="js/func.js"></script>
+
+
+
+</head>
+
+<body onload="loadingDivHide()">
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="loading_div" class="loaderClass">
+        <img src="images/default-loader.gif"  height="66" width="66"><br>
+        <h1>Loading...</h1>
+    </div>
+
+<div class="background-body"></div>
+<!-- header -->
+  <div id="bajomarco" class="marco"></div>
+	<div id="top" class="marco">
+    <div id="nav">
+      <div id="t1"></div><div id="f1" class="cl">Home</div>
+      <div id="t2"></div><div id="f2" class="cl">Acabados</div>
+      <div id="t3"></div><div id="f3" class="cl">Boceta</div>
+      <div id="t4"></div><div id="f4" class="cl">Last</div>
+    </div>
+    <div class="like-container" style="position:absolute; right:20px; bottom:1px; z-index:200;">
+                  <div class="fb-like" data-href="http://zeta-moble.com" data-send="true" data-width="450" data-show-faces="false" data-font="lucida grande" data-colorscheme="dark" data-action="recommend"></div>
+              </div>
+  </div>
+<!-- end header-->
+
+
+	<div id="bottom"></div>
+
+	<div id="wrapper">
+     
+     <div id="color-body"></div>
+    <!-- stage 1 -->  
+		<div class="stage" id="stage1">
+                <div id="fondo-productos" class="contra"></div>
+                <div id="galeria-productos" class="contra">
+                   <ul id="lista-pro">
+                    <li>Cocinas integrales</li>
+                    <li>Muebles para baño</li>
+                    <li>Mesas</li>
+                    <li>Libreros</li>
+                    <li>Repisas</li>
+                    <li>Muros falsos a base de ladrillos de madera</li>
+                   </ul>
+                </div>
+
+               <div id="galeria" class="contra">
+                  <div id="container">
+                    <div class="slide" id="s1" ><img width="700px" src="images/librero.jpg"></div>
+                       <div class="slide" id="s2"><img width="700px"  src="assets/galeria/mobleu.jpg"></div>
+                       <div class="slide" id="s3"><img width="700px" src="assets/galeria/modelo_fly.jpg"></div>
+                       <div class="slide" id="s4"><img width="700px" src="assets/galeria/cocinas+integrales+disenos+minimalistas.jpg"></div>
+                       <div class="slide" id="s5"><img width="700px" src="assets/galeria/cocina_chocolate.jpg"></div>
+                       <div class="slide" id="s6"><img width="700px" src="assets/galeria/G026.jpg"></div>
+                       <div class="slide" id="s7"><img width="700px" src="assets/galeria/cocina-integral_4.png"></div>
+                       <div class="slide" id="s8"><img width="700px" src="assets/galeria/barra.jpg"></div>
+                       
+                   </div>
+
+               </div>
+               
+             <!--   <div class="text-container contra" style="position: absolute; width:79%; height:20%; left:20%; bottom:10px; display:block;">
+                  <p class="copy">El diseño altamente sustentable nos motiva para construir muebles con acabados perfectos y estéticos, que personalizan cada espacio.</p>
+                  <p class="copy">En la siguiente sección vas a encontrar los distintos acabados, disponibles para tus muebles.</p>
+               </div>-->
+		</div>
+    <!-- -->
+		<div class="stage" id="stage2">
+      <div id="fancylayer">   <!-- fancy-layer -->
+           <div id="close" style="position:absolute; right:280px; top:10px; z-index:200; cursor:pointer;">cerrar</div>
+      </div>
+        <div id="ball1" class="contra ball"><h2>1 Laminados 42</h2>
+              <div id="mascara-laminados">
+             
+            </div>
+
+            <div class="tooltip"></div> <!-- Tooltip -->
+            <div id="slider"></div> <!-- the Slider -->
+           
+
+        </div>
+        <div id="ball2" class="contra ball"><h2>2 Chapas 24</h2>
+             <div id="mascara-chapas">          
+               <!-- <div id="contenedor-chapas">
+                  <div class="pieceChapas" id="pieceChapa1"><img src="assets/chapas/block-mottle-makore.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa2"><img src="assets/chapas/carbonized-bamboo.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa3"><img src="assets/chapas/clear-alder.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa4"><img src="assets/chapas/fc-african-mahogany.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa5"><img src="assets/chapas/fc-cherry.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa6"><img src="assets/chapas/fc-maple.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa7"><img src="assets/chapas/fc-red-oak.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa8"><img src="assets/chapas/fc-south-american-rosewood.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa9"><img src="assets/chapas/fc-wallnut.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa10"><img src="assets/chapas/fc-white-birch.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa11"><img src="assets/chapas/natural-bamboo.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa12"><img src="assets/chapas/qtd-cherry.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa13"><img src="assets/chapas/qtd-figured-english-sycamore.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa14"><img src="assets/chapas/qtd-figured-anigre.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa15"><img src="assets/chapas/qtd-macassar-ebony.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa16"><img src="assets/chapas/qtd-mahogany-limited.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa17"><img src="assets/chapas/qtd-makore.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa18"><img src="assets/chapas/qtd-maple.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa19"><img src="assets/chapas/qtd-teak.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa20"><img src="assets/chapas/qtd-walnut.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa21"><img src="assets/chapas/qtd-wengue.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa22"><img src="assets/chapas/qtd-white-ash.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa23"><img src="assets/chapas/qtd-zebrawood.jpg" width="140" height="150"></div>
+                  <div class="pieceChapas" id="pieceChapa24"><img src="assets/chapas/rift-red-oak.jpg" width="140" height="150"></div>
+                  
+                </div>-->
+             </div> 
+             <div class="tooltip2"></div> <!-- Tooltip 2 -->
+            <div id="slider2"></div> <!-- the Slider 2 -->
+        </div>
+        <div id="ball3" class="contra ball"><h2>3 Metales 14</h2>
+          <div id="mascara-metales">
+              <!--<div id="contenedor-metales">
+                <div class="pieceMetales" id="pieceMetales1"><img src="assets/metales/Aluma-Steel.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales2"><img src="assets/metales/brite-brushed-natural-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales3"><img src="assets/metales/polished-copper-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales4"><img src="assets/metales/polished-gold-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales5"><img src="assets/metales/Polished-Natural-Aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales6"><img src="assets/metales/satin-brushed-black-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales7"><img src="assets/metales/satin-brushed-cooper-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales8"><img src="assets/metales/satin-brushed-gold-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales9"><img src="assets/metales/satin-brushed-light-bronze-aluminium.jpg" width="140" height="150"></div>
+                <div class="piecemetales" id="pieceMetales10"><img src="assets/metales/satin-brushed-medium-bronze-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales11"><img src="assets/metales/satin-brushed-natural-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales12"><img src="assets/metales/Satin-Brushed-Natural-Premium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales13"><img src="assets/metales/satin-brushed-smoke-aluminium.jpg" width="140" height="150"></div>
+                <div class="pieceMetales" id="pieceMetales14"><img src="assets/metales/natural-aluminum-matte.jpg" width="140" height="150"></div>
+              </div>-->
+          </div>    
+        </div>
+        <div id="ball4" class="contra ball"><h2>4 Ladrillos</h2>
+          <!--
+          <iframe width="100%" height="180" src="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2FTechnoLiveSets%2Fmartin-eyerer-kling-klong-radio-show-11-06-2012%2F&embed_uuid=95db5ca7-e78c-4617-8656-569906884e14&stylecolor=331e1e&embed_type=widget_standard" frameborder="0"></iframe><div style="clear:both; height:3px; width:auto;"></div><p style="display:block; font-size:12px; font-family:Helvetica, Arial, sans-serif; margin:0; padding: 3px 4px; color:#331e1e; width:auto;"><a href="http://www.mixcloud.com/TechnoLiveSets/martin-eyerer-kling-klong-radio-show-11-06-2012/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=resource_link" target="_blank" style="color:#331e1e; font-weight:bold;">Martin Eyerer - Kling Klong Radio Show - 11-06-2012</a><span> by </span><a href="http://www.mixcloud.com/TechnoLiveSets/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=profile_link" target="_blank" style="color:#331e1e; font-weight:bold;">Technolivesets</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&utm_medium=web&utm_campaign=base_links&utm_term=homepage_link" target="_blank" style="color:#331e1e; font-weight:bold;"> Mixcloud</a></p><div style="clear:both; height:3px;"></div>
+           -->
+        </div>
+      
+   </div>
+   <!-- -->
+		<div class="stage" id="stage3">
+
+         <div id="canvas_container" class="contra" style="position:absolute; width:800px; height:500px; left:50%; margin-left:-400px; top:20%; background-color:transparent;">
+          <canvas id="boceto" style="position:absolute; width:600px; height:auto;"></canvas>
+         </div>
+
+
+       <div id="clr" style="position:absolute; top:100px; left:0;">
+            
+          <div class="getTono" id="#cceffc" style="background-color:#cceffc;"></div>  
+          <div class="getTono" id="#715026" style="background-color:#715026;"></div>  
+          <div class="getTono" id="#15aac8" style="background-color:#15aac8;"></div>
+          <div class="getTono" id="#f272ad" style="background-color:#f272ad;"></div>
+          <div class="getTono" id="#73767b" style="background-color:#73767b;"></div>
+          <div class="getTono" id="#fef56c" style="background-color:#fef56c;"></div>
+          <div class="getTono" id="#fffaff" style="background-color:#fffaff;"></div>
+          <div class="getTono" id="#000000" style="background-color:#000000;"></div>
+          <button id="editor_undo">Deshacer</button>
+          <button id="redo">Rehacer</button>
+          <button id="clear">Limpiar</button>
+          <button id="shadow">Shadow</button>
+          <button id="groso">Groso</button>
+          <button class="boton" id="addImage">Subir imagen</button>
+
+        <div class="loaderAjax" id="loaderAjax">
+          <img src="images/default-loader.gif">
+            <span>Publicando Fotografía...</span>
+        </div>          
+       </div>
+
+
+     <div id="editor" class="contra" style="position:absolute; cursor: crosshair; left:50%; margin-left:-300px; top:20%; border: 1px solid #cceffc;"></div>
+
+            <form id="registrar" method="post" style="position:absolute; top:150px;">
+              <input type="text" name="nombre" id="nombre" />
+              <input type="text" name="correo" id="correo" />
+              <input type="text" name="telefono" id="telefono" />
+              <input type="text" name="data" id="data" />
+              <input type="textarea" name="comment" id="comment"><br>
+              <input id="save" type="submit" value="Save" />
+            </form>
+         
+    </div>
+		<div class="stage" id="stage4">
+      <!--
+      <p>Construimos muebles de madera sobre diseño, de acuerdo a tus necesidades de espacio y estilo.</p><br>
+      <p>La calidad y lo durabilidad es primordial para nosotros</p>
+      <p>contamos con un sistema logístico y organizacional que nos permite ofrecer un gran precio.</p>
+      <p>con la intension de aprovechar el total de material construimos ladrillos de madera y los usamos para levantar muros falsos y barras en interiores.</p>
+     -->
+    
+       
+    </div>
+
+	</div>	
+</body>
+</html>
